@@ -1,0 +1,27 @@
+<div class="jumbotron text-center p-4 p-md-5 text-white rounded bg-dark">
+    <div class="col-md-6 px-0">
+      <h1 class="display-4 font-italic">Article Notes</h1>
+      <p class="lead my-3">All the news you want Exclusive</p>
+      <a href="/" id="scrape" class='btn btn-success'>Scan NPR for New Articles</a>
+    <a href="/saved" id="savedNotesPage" class='btn btn-warning'>View Saved Articles</a>
+    </div>
+    </div>
+
+<!-- Pass in data from server.js -->
+
+<div class="row">
+    {{#each articleNotes}}
+  <div class="col-sm-3">
+    <div class="card">
+        <div class="card-header">
+        <h5 class="card-title">{{this.title}}</h5>
+  </div>
+      <div class="card-body">
+        <p class="card-text">{{this.body}}</p>
+        <button class="btn btn-primary" id='deleteNoteHTML' data-id='{{this._id}}' data-title='{{this.title}}' data-summary='{{this.body}}'
+          data-link='{{this.link}}'>Delete Note</button>
+      </div>
+    </div>
+  </div>
+  {{/each}}
+  </div>

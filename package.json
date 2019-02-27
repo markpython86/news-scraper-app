@@ -1,0 +1,30 @@
+{
+  "name": "news-scraper-app",
+  "version": "1.0.0",
+  "description": "news scraper using mongodb express ",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/markpython86/news-scraper-app.git"
+  },
+  "author": "Mark Almanassra",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/markpython86/news-scraper-app/issues"
+  },
+  "homepage": "https://github.com/markpython86/news-scraper-app#readme",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "cheerio": "^1.0.0-rc.2",
+    "express": "^4.16.4",
+    "express-handlebars": "^3.0.1",
+    "mongoose": "^5.4.15",
+    "body-parser": "^1.18.3",
+    "mongojs": "^2.6.0",
+    "morgan": "^1.9.1",
+    "request": "^2.88.0"
+  }
+}
